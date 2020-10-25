@@ -1,0 +1,275 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body .imageblur{
+    background: url(./elements/image_background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+    height: 100vh;
+    filter:blur(10px);
+   
+}
+header{
+    top: 0%;
+    position: fixed;
+    z-index: 3;
+    background: linear-gradient(to right,blue,white);
+    height: 8vh;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 2px 0px rgba(38, 89, 197, 0.4);
+    background-color: rgba(38, 89, 197, 0.356);
+}
+
+.l1{
+    font-family: 'Crimson Text', serif;
+    font-size: 25px;
+    align-self: center;
+    color:whitesmoke;
+    margin: 0px 6px 0px 0px;
+}
+.l2{
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    align-self: center;
+    font-size: 20px;
+    text-transform: lowercase;
+    color:whitesmoke;
+}
+.main_content{
+    height: 80%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+    top: 0%;
+    background: transparent;
+}
+.heading{
+    display: inline-block;
+    height: 10vh;
+    margin-top: 10%;
+}
+h1{
+    font-size: 35px;
+    color:rgb(192, 189, 189);
+
+}
+.pads{
+    height: 100%;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.39);
+    justify-content: center;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 50% 50% ;
+    grid-gap: 10px;
+    padding: 20px; 
+ 
+}
+.pad1{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pad1_music{
+    width: 70%;
+    cursor: pointer;
+    border-radius: 100%;
+    height: 70%;
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+    z-index:2;
+    background:url(./elements/hiphop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pad2{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pad3{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pad4{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pad5{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pad6{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .pad2_music{
+    width: 70%;
+    cursor: pointer;
+    border-radius: 100%;
+    height: 70%;
+        box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+    z-index:2;
+    background:url(./elements/soundeff.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pad3_music{
+    width: 70%;
+    cursor: pointer;
+    border-radius: 100%;
+    height: 70%;
+        box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+    z-index:2;
+    background:url(./elements/trap1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pad4_music{
+    width: 70%;
+    cursor: pointer;
+    border-radius: 100%;
+    height: 70%;
+        box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+    z-index:2;
+    background:url(./elements/funnk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pad5_music{
+    width: 70%;
+    cursor: pointer;
+    border-radius: 100%;
+    height: 70%;
+        box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+    z-index:2;
+    background:url(./elements/trap3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pad6_music{
+    width: 70%;
+    cursor: pointer;
+    border-radius: 100%;
+    height: 70%;
+        box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+    z-index:2;
+    background:url(./elements/trap2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* animation */
+.wave{
+    animation: wave 1s infinite linear;
+}
+@keyframes wave{
+    0%{
+        transform: scale(1);box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.4);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    70%{
+        box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0);
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    }
+}
+@media (max-width:1233px){
+    .pads{
+        height: 60%;
+        width: 50%;
+        margin-top: 10%;
+        grid-template-columns: 20% 20% 20%;
+        grid-template-rows: 50% 50% ;
+     
+    }
+}
+@media (max-width:995px){
+    .pads{
+        height: 60%;
+        width: 50%;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 30% 30% ;
+    }
+}
+@media (max-width:960px){
+    .pads{
+        height: 60%;
+        width: 50%;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 40% 40% ;
+    }
+}
+@media(max-width:791px){
+    .heading{
+        margin-top: 20%;
+    }
+    h1{
+        font-size: 30px;
+    
+    }
+    .pads{
+        height: 50%;
+        width: 50%;
+        grid-template-columns: 20% 20% 20%;
+        grid-template-rows: 20% 20% ;
+   
+    }
+
+}
+@media(max-width:540px){
+    .pads{
+        height: 50%;
+        width: 50%;
+        background: rgba(255, 255, 255, 0.39);
+        grid-template-columns: 20% 20% 20%;
+        grid-template-rows: 20% 20% ;
+     
+    }
+    h1{
+        font-size: 25px;
+
+    
+    }
+}
+@media(max-width:368px){
+    .heading{
+        margin-top: 30%;
+    }
+    .pads{
+        height: 40%;
+        width: 50%;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 30% 30% ;
+
+    }
+}
