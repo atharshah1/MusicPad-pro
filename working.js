@@ -10,6 +10,18 @@ var p3=document.getElementById("pad3");
 var p4=document.getElementById("pad4");
 var p5=document.getElementById("pad5");
 var p6=document.getElementById("pad6");
+var pad=document.getElementsByClassName("pads");
+function toggle_functionality(){
+    var toggle_button=document.getElementById("toggle_button");
+    var toggle_circle=document.getElementsByClassName("toggle_circle");
+    var image=document.getElementsByClassName("imageblur");
+    var header=document.getElementById("header");
+    toggle_button.classList.toggle("active");
+    toggle_circle[0].classList.toggle("active");
+    header.classList.toggle("active");
+    pad[0].classList.toggle("active");
+    image[0].classList.toggle("active");
+}
 function m1(){
     p1.classList.toggle("wave");
     pad2.pause();
