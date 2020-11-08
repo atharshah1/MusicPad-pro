@@ -2,30 +2,37 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+
 }
-body .imageblur{
+.imageblur{
     background: url(./elements/image_background.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    z-index: -1;
     height: 100vh;
     filter:blur(10px);
-   
+    transition: all 100ms ease-in-out;
+}
+.imageblur.active{
+    filter: brightness(30%);
 }
 header{
     top: 0%;
     position: fixed;
     z-index: 3;
-    background: linear-gradient(to right,blue,white);
+    background: linear-gradient(to right,blue,whitesmoke);
     height: 8vh;
     width: 70%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
+    transition: all 100ms ease-in-out;
     align-items: center;
     box-shadow: 0px 2px 2px 0px rgba(38, 89, 197, 0.4);
     background-color: rgba(38, 89, 197, 0.356);
+}
+header.active{
+    background: linear-gradient(to right,blue,rgb(39, 39, 39));
 }
 
 .l1{
@@ -75,7 +82,38 @@ h1{
     grid-template-rows: 50% 50% ;
     grid-gap: 10px;
     padding: 20px; 
- 
+    transition: all 100ms ease-in-out;
+}
+.pads.active{
+    filter: invert(100%);
+}
+.toggle_button{
+    height:40px;
+    width: 40px;
+    z-index: 2;
+    transform:translate(290px,100px);
+    display: flex;
+    transition: all 300ms ease-in-out;
+    align-items: center;
+    border-radius: 45px;
+    background-color: rgb(241, 241, 241);
+}
+.toggle_circle{
+    height:15px;
+    width: 15px;
+    z-index: 2;
+    position: relative;
+    border-radius: 100px;
+    transform: translateX(2px);
+    background-color: rgb(39, 39, 39);
+    transition: all 100ms ease-in-out;
+}
+.toggle_circle.active{
+    transform: translateX(22px);
+    background-color: white;
+}
+.toggle_button.active{
+    background-color: rgb(29, 27, 27);
 }
 .pad1{
      display: flex;
@@ -219,6 +257,18 @@ h1{
         width: 50%;
         grid-template-columns: 30% 30% 30%;
         grid-template-rows: 30% 30% ;
+    }
+    .toggle_button{
+        height: 10px;
+        width: 20px;
+        transform: translate(130px,100px)
+    }
+    .toggle_circle{
+        height: 5px;
+        width: 5px;
+    }
+    .toggle_circle.active{
+        transform: translateX(12px);
     }
 }
 @media (max-width:960px){
