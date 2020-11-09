@@ -319,7 +319,7 @@ h1{
         width: 5px;
     }
     .toggle_circle.active{
-        transform: translateX(16px);
+        transform: translateX(14px);
         background-color: white;
     }
 }
