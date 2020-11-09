@@ -296,21 +296,7 @@ h1{
     }
 
 }
-@media(max-width:540px){
-    .pads{
-        height: 50%;
-        width: 50%;
-        background: rgba(255, 255, 255, 0.39);
-        grid-template-columns: 20% 20% 20%;
-        grid-template-rows: 20% 20% ;
-     
-    }
-    h1{
-        font-size: 25px;
 
-    
-    }
-}
 @media(max-width:540px){
     .pads{
         height: 50%;
@@ -333,7 +319,7 @@ h1{
         width: 5px;
     }
     .toggle_circle.active{
-        transform: translateX(22px);
+        transform: translateX(17px);
         background-color: white;
     }
 }
